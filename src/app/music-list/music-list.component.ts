@@ -14,6 +14,7 @@ export class MusicListComponent {
     anio: 2009,
     precio: 15000,
     stock: 20,
-    portada: "../../assets/image/cantora.jpg"
+    portada: "assets/img/cantora.jpg"
   };
+  
 }
