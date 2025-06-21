@@ -1,4 +1,4 @@
-<p>Artistas - Discos</p>
+<h1>Listado de Artistas - Discos</h1>
 <table class="table">
     <thead>
         <tr>
@@ -11,53 +11,19 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        @for (music of music; track music.artista) {
+        <tr [ngClass]="{'novedad' : music.novedad}">
             <td>{{music.artista}}</td>
             <td>{{music.disco}}</td>
             <td>{{music.anio}}</td>
-            <td>{{music.precio}}</td>
-            <td>{{music.stock}}</td>
-            <td><img [src]="music.portada" [alt]="music.disco"></td>
+            <td>{{music.precio | currency}}</td>
+            @if(music.stock > 0) {
+                <td>{{ music.stock }}</td>
+            } @else {
+                <td><span class="badge text-bg-primary">SIN STOCK</span></td>
+            }    
+            <td><img [src]="music.portada" width="120" height="120" [alt]="music.disco"></td>
         </tr>
-        <tr>
-            <td>Soledad Pastorutti</td>
-            <td>Natural</td>
-            <td>2024</td>
-            <td>27000</td>
-            <td>48</td>
-            <td><img [src]="music.portada" [alt]="music.disco"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><img></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><img></td>
-        </tr>
+    }
     </tbody>
 </table>
