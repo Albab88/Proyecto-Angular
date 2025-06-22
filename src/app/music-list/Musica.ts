@@ -6,4 +6,5 @@ export interface Musica {
     stock: number;
     portada: string;
     novedad: boolean;
+    cantidad : number;
 }

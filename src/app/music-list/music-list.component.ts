@@ -17,7 +17,8 @@ export class MusicListComponent {
       precio: 23000,
       stock: 8,
       portada: "assets/img/Alfredo Zitarrosa - Esenciales.jpg",
-      novedad: false
+      novedad: false,
+      cantidad: 0
     },
   {
     artista: "Alfredo Zitarrosa",
@@ -26,7 +27,8 @@ export class MusicListComponent {
     precio: 38000,
     stock: 10,
     portada: "assets/img/Alfredo Zitarrosa - Si te vas.jpg",
-    novedad: true
+    novedad: true,
+    cantidad: 0
   },
   {
     artista: "Atahualpa Yupanqui",
@@ -35,7 +37,8 @@ export class MusicListComponent {
     precio: 22500,
     stock: 26,
     portada: "assets/img/Atahualpa Yupanqui - La Humilde.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Atahualpa Yupanqui",
@@ -44,7 +47,8 @@ export class MusicListComponent {
     precio: 45000,
     stock: 60,
     portada: "assets/img/Atahualpa Yupanqui - Los ejes de mi Carreta.jpg",
-    novedad: true
+    novedad: true,
+    cantidad: 0
   },
   {
     artista: "Atahualpa Yupanqui",
@@ -53,7 +57,8 @@ export class MusicListComponent {
     precio: 37400,
     stock: 0,
     portada: "assets/img/Atahualpa Yupanqui - Luna Tucumana.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Duo Coplanacu",
@@ -62,7 +67,8 @@ export class MusicListComponent {
     precio: 45000,
     stock: 40,
     portada: "assets/img/Duo Coplanacu - La Juntada.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Duo Coplanacu",
@@ -71,7 +77,8 @@ export class MusicListComponent {
     precio: 38000,
     stock: 91,
     portada: "assets/img/Duo Coplanacu - Los Copla.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Duo Coplanacu",
@@ -80,7 +87,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 47,
     portada: "assets/img/Duo Coplanacu - Mayu Maman.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Horacio Banegas",
@@ -89,7 +97,8 @@ export class MusicListComponent {
     precio: 36500,
     stock: 42,
     portada: "assets/img/Horacio Banegas - La ciudad Desierta.jpg",
-    novedad: true
+    novedad: true,
+    cantidad: 0
   },
   {
     artista: "Horacio Banegas",
@@ -98,7 +107,8 @@ export class MusicListComponent {
     precio: 63000,
     stock: 8,
     portada: "assets/img/Horacio Banegas - Mi Origen y mi Lugar.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Horacio Guarany",
@@ -107,7 +117,8 @@ export class MusicListComponent {
     precio: 50000,
     stock: 100,
     portada: "assets/img/Horacio Guarany - Discografía Completa Vol. 1.jpg",
-    novedad: true
+    novedad: true,
+    cantidad: 0
   },
   {
     artista: "Horacio Guarany",
@@ -116,7 +127,8 @@ export class MusicListComponent {
     precio: 50000,
     stock: 0,
     portada: "assets/img/Horacio Guarany - Discografía Completa Vol. 2.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Horacio Guarany",
@@ -125,7 +137,8 @@ export class MusicListComponent {
     precio: 50000,
     stock: 136,
     portada: "assets/img/Horacio Guarany - Discografía Completa Vol. 3.jpg",
-    novedad: true
+    novedad: true,
+    cantidad: 0
   },
   {
     artista: "Jorge Cafrune",
@@ -134,7 +147,8 @@ export class MusicListComponent {
     precio: 28900,
     stock: 70,
     portada: "assets/img/Jorge Cafrune - Esenciales.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Jorge Cafrune",
@@ -143,7 +157,8 @@ export class MusicListComponent {
     precio: 38000,
     stock: 0,
     portada: "assets/img/Jorge Cafrune - Siempre Vigente (Remastered).jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -152,7 +167,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -161,7 +177,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -170,7 +187,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -179,7 +197,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -188,7 +207,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -197,7 +217,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -206,7 +227,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -215,7 +237,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -224,7 +247,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -233,7 +257,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -242,7 +267,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -251,7 +277,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -260,7 +287,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -269,7 +297,8 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
   {
     artista: "Mercedes Sosa",
@@ -278,8 +307,21 @@ export class MusicListComponent {
     precio: 15000,
     stock: 20,
     portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false
+    novedad: false,
+    cantidad: 0
   },
 ];
   
+constructor() { }
+
+
+upCantidad(music : Musica) : void {
+  if(music.cantidad < music.stock)
+      music.cantidad++;
+}
+
+downCantidad(music : Musica) : void {
+  if(music.cantidad>0)
+      music.cantidad--;
+}
 }

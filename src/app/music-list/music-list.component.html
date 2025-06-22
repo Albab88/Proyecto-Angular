@@ -2,17 +2,19 @@
 <table class="table">
     <thead>
         <tr>
+            <th>Portada</th>
             <th>Artista</th>
             <th>Nombre del disco</th>
             <th>Año de Lanzamiento</th>
             <th>Precio</th>
             <th>Stock disponible</th>
-            <th>Portada</th>
+            <th>Cantidad a comprar</th>
         </tr>
     </thead>
     <tbody>
         @for (music of music; track music.artista) {
         <tr [ngClass]="{'novedad' : music.novedad}">
+            <td><img [src]="music.portada" width="100" height="100" [alt]="music.disco"></td>
             <td>{{music.artista}}</td>
             <td>{{music.disco}}</td>
             <td>{{music.anio}}</td>
@@ -22,8 +24,12 @@
             } @else {
                 <td><span class="badge text-bg-primary">SIN STOCK</span></td>
             }    
-            <td><img [src]="music.portada" width="120" height="120" [alt]="music.disco"></td>
+            <td>
+                <button class="btn btn-outline-info btn-sm" (click)="downCantidad(music)">-</button>
+                {{music.cantidad}}
+                <button class="btn btn-outline-info btn-sm" (click)="upCantidad(music)">+</button>
+            </td>
         </tr>
-    }
+        }
     </tbody>
 </table>
