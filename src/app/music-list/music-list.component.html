@@ -1,4 +1,4 @@
-<h1>Listado de Artistas - Discos</h1>
+<h2>Listado de Artistas - Discos</h2>
 <table class="table">
     <thead>
         <tr>
@@ -26,7 +26,7 @@
             }    
             <td>
                 <button class="btn btn-outline-info btn-sm" (click)="downCantidad(music)">-</button>
-                {{music.cantidad}}
+                <input type="number" [(ngModel)]="music.cantidad">
                 <button class="btn btn-outline-info btn-sm" (click)="upCantidad(music)">+</button>
             </td>
         </tr>
