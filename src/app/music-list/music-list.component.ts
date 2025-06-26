@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Musica } from './Musica';
 
 @Component({
@@ -7,7 +7,7 @@ import { Musica } from './Musica';
   templateUrl: './music-list.component.html',
   styleUrl: './music-list.component.scss'
 })
-export class MusicListComponent {
+export class MusicListComponent implements OnInit {
 
   music: Musica [] = [
     {
@@ -312,7 +312,12 @@ export class MusicListComponent {
   },
 ];
   
-constructor() { }
+constructor() { 
+
+}
+
+  ngOnInit(): void {
+  }
 
 
 upCantidad(music : Musica) : void {
