@@ -312,21 +312,13 @@ export class MusicListComponent implements OnInit {
   },
 ];
   
-constructor() { 
-
-}
+constructor() { }
 
   ngOnInit(): void {
   }
 
-
-upCantidad(music : Musica) : void {
-  if(music.cantidad < music.stock)
-      music.cantidad++;
-}
-
-downCantidad(music : Musica) : void {
-  if(music.cantidad>0)
-      music.cantidad--;
-}
+  maxReached(m: String) {
+    alert(m);
+  }
+  
 }

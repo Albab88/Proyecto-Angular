@@ -2,7 +2,6 @@
 <table class="table text-center" >
     <thead>
         <tr>
-
             <th scope="col">Artista</th>
             <th scope="col">Disco</th>
             <th scope="col">Año</th>
@@ -16,7 +15,7 @@
         <tr [ngClass]="{'novedad' : music.novedad}">
 
             <td class="artista">{{music.artista}} <img class = "img-thumbnail" [src]="music.portada" width="150" [alt]="music.disco"></td>
-            <td>{{music.disco}}</td>
+            <td class ="anchoMax">{{music.disco}}</td>
             <td>{{music.anio}}</td>
             <td>{{music.precio | currency}}</td>
             @if(music.stock > 0) {
@@ -25,9 +24,7 @@
                 <td><span class="badge text-bg-primary">SIN STOCK</span></td>
             }    
             <td>
-                <button class="btn btn-outline-dark btn-sm" (click)="downCantidad(music)">-</button>
-                <input type="number" class="cantidad" [(ngModel)]="music.cantidad">
-                <button class="btn btn-outline-dark btn-sm" (click)="upCantidad(music)">+</button>
+                <app-input-integer [(cantidad)]="music.cantidad" [max]="music.stock" (maxReached)="maxReached($event)"></app-input-integer>
             </td>
         </tr>
         }

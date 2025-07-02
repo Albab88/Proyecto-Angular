@@ -8,6 +8,7 @@ import { CarritoListComponent } from './carrito-list/carrito-list.component';
 import { MusicListComponent } from './music-list/music-list.component';
 import { DisqueriaAboutComponent } from './disqueria-about/disqueria-about.component';
 import { DisqueriaMusicComponent } from './disqueria-music/disqueria-music.component';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DisqueriaMusicComponent } from './disqueria-music/disqueria-music.compo
     MusicListComponent,
     CarritoListComponent,
     DisqueriaAboutComponent,
-    DisqueriaMusicComponent
+    DisqueriaMusicComponent,
+    InputIntegerComponent
   ],
   imports: [
     BrowserModule,
