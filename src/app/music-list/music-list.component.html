@@ -1,4 +1,4 @@
-<h2>Listado de Artistas - Discos</h2>
+<h2>Discos</h2>
 <table class="table text-center" >
     <thead>
         <tr>
@@ -14,17 +14,17 @@
         @for (music of music; track music.artista) {
         <tr [ngClass]="{'novedad' : music.novedad}">
 
-            <td class="artista">{{music.artista}} <img class = "img-thumbnail" [src]="music.portada" width="150" [alt]="music.disco"></td>
+            <td class="artista">{{music.artista}} <img class ="img-thumbnail" [src]="music.portada" width="120" [alt]="music.disco"></td>
             <td class ="anchoMax">{{music.disco}}</td>
-            <td>{{music.anio}}</td>
+            <td >{{music.anio}}</td>
             <td>{{music.precio | currency}}</td>
             @if(music.stock > 0) {
-                <td>{{ music.stock }}</td>
+                <td></td>
             } @else {
-                <td><span class="badge text-bg-primary">SIN STOCK</span></td>
+                <td><span class="badge sinStock">SIN STOCK</span></td>
             }    
             <td>
-                <app-input-integer [(cantidad)]="music.cantidad" [max]="music.stock" (maxReached)="maxReached($event)"></app-input-integer>
+                <app-input-integer [(cantidad)]="music.cantidad" [max]="music.stock" *ngIf="music.stock" (maxReached)="maxReached($event)"></app-input-integer>
             </td>
         </tr>
         }

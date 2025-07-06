@@ -1,5 +1,11 @@
 <div>
-    <button class="btn btn-outline-dark btn-sm" (click)="downCantidad()">-</button>
-    <input type="number" class="cantidad" [(ngModel)]="cantidad" (keyup)="changeCantidad($event)" >
-    <button class="btn btn-outline-dark btn-sm" (click)="upCantidad()">+</button>
+    <div>
+    <input type="text-center" class="cantidad" [(ngModel)]="cantidad" (keyup)="changeCantidad($event)" >
+    </div>
+    <button class="btn btn-outline-dark btn-sm" (click)="downCantidad()">
+        <p>-</p>
+    </button>
+    <button class="btn btn-outline-dark btn-sm" (click)="upCantidad()">
+        <p>+</p>
+    </button>
 </div>

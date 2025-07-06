@@ -1,3 +1,21 @@
 input {
-    max-width: 40px;
+    max-width: 60px;
+    border-radius: 5px;
+    background-color: rgba(120, 70, 236, 0.18);
+    text-align: center;
+}
+
+button{
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+    padding: 0;
+    background-color: rgba(250, 201, 138, 0.5);
+}
+button:hover{
+    background-color: rgb(87, 3, 87, 0.65);
+}
+
+p{
+align-items: center;
 }

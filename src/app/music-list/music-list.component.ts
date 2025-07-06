@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MusicCartService } from '../music-cart.service';
 import { Musica } from './Musica';
 
 @Component({
@@ -170,151 +171,16 @@ export class MusicListComponent implements OnInit {
     novedad: false,
     cantidad: 0
   },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
-  {
-    artista: "Mercedes Sosa",
-    disco: "Cantora 1",
-    anio: 2009,
-    precio: 15000,
-    stock: 20,
-    portada: "assets/img/Mercedes Sosa - Cantora 1.jpg",
-    novedad: false,
-    cantidad: 0
-  },
 ];
   
-constructor() { }
+constructor(private cart: MusicCartService) {
+}
 
   ngOnInit(): void {
+  }
+
+  addToCart(music : Musica) : void {
+    this.cart.addToCart(music);
   }
 
   maxReached(m: String) {

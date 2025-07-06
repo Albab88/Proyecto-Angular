@@ -32,7 +32,7 @@ export class InputIntegerComponent implements OnInit {
       this.cantidadChange.emit(this.cantidad);
     }
     else {
-      this.maxReached.emit("Alcanzaste el máximo");
+      this.maxReached.emit("Alcanzaste el stock máximo disponible");
     }
   }
 
