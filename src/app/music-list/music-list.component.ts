@@ -181,6 +181,8 @@ constructor(private cart: MusicCartService) {
 
   addToCart(music : Musica) : void {
     this.cart.addToCart(music);
+    music.stock -= music.cantidad;
+    music.cantidad = 0; // Resetea la cantidad después de agregar al carrito
   }
 
   maxReached(m: String) {

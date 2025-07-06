@@ -1,0 +1,21 @@
+.itemCarrito li {
+    background-color: #8117be21;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.itemCarrito li p {
+    color: #9b4d90;
+
+}
+
+
+
+p {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: expanded;
+}

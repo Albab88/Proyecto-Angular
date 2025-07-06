@@ -25,6 +25,7 @@
             }    
             <td>
                 <app-input-integer [(cantidad)]="music.cantidad" [max]="music.stock" *ngIf="music.stock" (maxReached)="maxReached($event)"></app-input-integer>
+                <button class="btnComprar" (click)="addToCart(music)" *ngIf="music.stock">Comprar</button>
             </td>
         </tr>
         }

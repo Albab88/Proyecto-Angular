@@ -1,0 +1,18 @@
+<h2>Carrito de compras</h2>
+
+<!--<ul>
+    <li *ngFor="let music of (cartList$ | async)">
+        Artista: {{ music.artista }} - Album: {{ music.disco }} - Cantidad: {{ music.cantidad }}
+    </li>
+</ul>-->
+
+
+<div class="carritoCompra text-center">
+        @for(music of (cartList$ | async); track music.artista){
+        <ul class="itemCarrito">
+            <li>
+                <p> Artista: {{ music.artista }} - Album: {{ music.disco }} - Cantidad: {{ music.cantidad }}</p>
+            </li>
+        </ul>
+        }
+</div>
