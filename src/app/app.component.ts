@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Disquería "Coplas Eternas"';
+  title = '"Coplas Eternas" - Musica Folcklórica';
 }
