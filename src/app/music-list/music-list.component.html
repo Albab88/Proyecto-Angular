@@ -6,25 +6,21 @@
             <th scope="col">Disco</th>
             <th scope="col">Año</th>
             <th scope="col">Precio</th>
-            <th scope="col">Stock</th>
             <th scope="col">Cantidad</th>
         </tr>
     </thead>
     <tbody>
         @for (music of music; track music.artista) {
         <tr [ngClass]="{'novedad' : music.novedad}">
-
             <td class="artista">{{music.artista}} <img class ="img-thumbnail" [src]="music.portada" width="120" [alt]="music.disco"></td>
             <td class ="anchoMax">{{music.disco}}</td>
             <td >{{music.anio}}</td>
-            <td>{{music.precio | currency}}</td>
-            @if(music.stock > 0) {
-                <td></td>
-            } @else {
-                <td><span class="badge sinStock">SIN STOCK</span></td>
-            }    
+            <td>{{music.precio | currency}}</td>  
             <td>
                 <app-input-integer [(cantidad)]="music.cantidad" [max]="music.stock" *ngIf="music.stock" (maxReached)="maxReached($event)"></app-input-integer>
+                    @if(music.stock <= 0) {
+                    <td><span class="badge sinStock">SIN STOCK</span></td>
+                    } 
                 <button class="btnComprar" (click)="addToCart(music)" *ngIf="music.stock">Comprar</button>
             </td>
         </tr>
