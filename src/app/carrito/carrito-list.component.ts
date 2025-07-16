@@ -19,5 +19,8 @@ export class CarritoListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+QuitarDisco(music : Musica) : void {
+  this.cart.removeFromCart(music);
+  music.cantidad -=1;
+}
 }

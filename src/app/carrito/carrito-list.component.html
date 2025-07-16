@@ -12,6 +12,7 @@
         <ul class="itemCarrito">
             <li>
                 <p> Artista: {{ music.artista }} - Album: {{ music.disco }} - Cantidad: {{ music.cantidad }}</p>
+                <button class="btnQuitar" (click)="QuitarDisco(music)"><img src="assets/img/quitar-del-carrito.png" class="icono"></button>
             </li>
         </ul>
         }
