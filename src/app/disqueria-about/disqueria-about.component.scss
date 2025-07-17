@@ -1,11 +1,23 @@
 
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .contacto {
     text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 30px;
     margin-bottom: 30px;;
     padding: 20px;
     border: 1px solid #e42bd4c9;
     border-radius: 5px;
+}
+
+.icono-contacto {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
 }

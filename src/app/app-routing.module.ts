@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DisqueriaAboutComponent } from './disqueria-about/disqueria-about.component';
 import { DisqueriaMusicComponent } from './disqueria-music/disqueria-music.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
   
@@ -17,7 +18,11 @@ const routes: Routes = [
   {
     path: 'about',
     component: DisqueriaAboutComponent
-  },
+  }, 
+  {
+    path: 'sign-up',
+    component: SignUpComponent
+  }
 ];
 
 @NgModule({

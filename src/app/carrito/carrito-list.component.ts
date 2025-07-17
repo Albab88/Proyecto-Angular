@@ -21,6 +21,13 @@ export class CarritoListComponent implements OnInit {
 
 QuitarDisco(music : Musica) : void {
   this.cart.removeFromCart(music);
-  music.cantidad -=1;
+  if (music.cantidad > 0) {
+    music.cantidad -=1;
+  } else {
+    //que desaparezca el carrito
+    this.cart.removeFromCart(music);
+    music.cantidad = 0;
+    console.log("No hay más unidades de este disco en el carrito");
+  }
 }
 }
