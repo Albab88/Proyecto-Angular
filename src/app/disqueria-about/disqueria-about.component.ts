@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './disqueria-about.component.html',
   styleUrl: './disqueria-about.component.scss'
 })
+
 export class DisqueriaAboutComponent {
 
 }

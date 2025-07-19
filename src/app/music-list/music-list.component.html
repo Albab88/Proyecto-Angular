@@ -21,7 +21,7 @@
                     @if(music.stock <= 0) {
                     <td><span class="badge sinStock">SIN STOCK</span></td>
                     } 
-                <button class="btnComprar" (click)="addToCart(music)" *ngIf="music.stock">Comprar</button>
+                <button class="btnComprar" (click)="addToCart(music)" *ngIf="music.stock"><img src="assets/img/anadir-al-carrito.png" class="icono"></button>
             </td>
         </tr>
         }

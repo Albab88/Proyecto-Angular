@@ -1,2 +1,28 @@
-<form [ngFormOptions]="formSignUp"></form>
-    
+<h2>Logueate</h2>
+<form class="formulario" [formGroup]="formSignUp" (submit)="onSubmit()">
+    <div class="control" [class.invalid]="formSignUp.get('username')?.invalid">
+        <label for="username">Usuario</label>
+        <input id="username" type="text" formControlName="username"/>
+        <div class="error-message">
+            <p *ngIf="formSignUp.get('username')?.hasError('required')">El usuario es requerido</p>
+        </div>
+    </div>
+
+    <div class="control" [class.invalid]="formSignUp.get('password')?.invalid">
+        <label for="password">Contraseña</label>
+        <input id="password" type="password" formControlName="password" />
+        <div class="error-message">
+            <p *ngIf="formSignUp.get('password')?.hasError('required')">La contraseña es requerida</p>
+        </div>
+    </div>
+
+    <div class="control">
+        <label for="confirmPassword">Confirmar Contraseña</label>
+        <input id="confirmPassword" type="password" formControlName="confirmPassword"/>
+        <div class="error-message">
+            <p *ngIf="formSignUp.hasError('passwordMismatch')">Las contraseñas no coinciden</p>
+        </div>
+    </div>
+
+    <button [disabled]="formSignUp.invalid" type="submit" class="btn btn-secundary">Iniciar Sesion</button>
+</form>

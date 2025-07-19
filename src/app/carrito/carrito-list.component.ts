@@ -10,24 +10,29 @@ import { Musica } from '../music-list/Musica';
   styleUrl: './carrito-list.component.scss'
 })
 export class CarritoListComponent implements OnInit {
-
+  
   cartList$: Observable<Musica[]>;
+  totalDiscos: number = 0;
+  totalPrecio: number = 0;
 
   constructor(private cart: MusicCartService) {
     this.cartList$ = cart.cartList.asObservable();
   }
   ngOnInit(): void {
+    this.cartList$.subscribe((musica: Musica[]) => {
+      this.totalDiscos = musica.reduce((total, item) => total + item.cantidad, 0);
+      this.totalPrecio = musica.reduce((total, item) => total + (item.precio * item.cantidad), 0);
+    });
   }
 
 QuitarDisco(music : Musica) : void {
-  this.cart.removeFromCart(music);
-  if (music.cantidad > 0) {
-    music.cantidad -=1;
-  } else {
-    //que desaparezca el carrito
-    this.cart.removeFromCart(music);
-    music.cantidad = 0;
-    console.log("No hay más unidades de este disco en el carrito");
-  }
+  this.cart.removeFromCart(music,1);
 }
+
+  Comprar() {
+    if(this.cart.cartList.value.length > 0)  {
+      alert("Compra realizada exitosamente. Muchas gracias");
+    }
+    this.cart.cartList.next([]);
+  }
 }

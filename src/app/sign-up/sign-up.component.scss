@@ -1,11 +1,19 @@
-form {
-    width: 500px;
-    max-width: 100%;
-    padding: 16px;
 
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-    border: 1px solid gray;
-    border-radius: 16px;
+.formulario {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    margin-bottom: 30px;;
+    padding: 20px;
+    border: 1px solid rgba(36, 3, 30, 0.686);
+    border-radius: 5px;
 }
 
 .control {
@@ -18,12 +26,12 @@ form {
     }
 
     &.invalid input {
-        border-color: red;
+        border-color: rgb(36, 3, 30);
     }
 
     .error-message {
         font-size: small;
-        color: red;
+        color: rgb(36, 3, 30);
 
         p { margin: 0; }
     }

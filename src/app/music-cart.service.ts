@@ -25,15 +25,15 @@ export class MusicCartService {
     this.cartList.next(this._cartList); //equivale al EmmitEvent
   }
   
-  removeFromCart(music: Musica) {
-  let item = this._cartList.findIndex((m) => m.disco === music.disco);
-  if (item > 0) {
-    this._cartList[item].cantidad -= music.cantidad;
-    if (this._cartList[item].cantidad <= 0) {
-      this._cartList.splice(item, 1); // Elimina el ítem del carrito
+  removeFromCart(music: Musica, cantidad: number = 1) {
+  let itemIndex = this._cartList.findIndex((m) => m.disco === music.disco);
+  if (itemIndex >= 0) {
+    if (cantidad >= this._cartList[itemIndex].cantidad) {
+      this._cartList.splice(itemIndex, 1);
+    } else {
+      this._cartList[itemIndex].cantidad -= cantidad;
     }
   }
-  console.log(this._cartList);
   this.cartList.next(this._cartList);
-}
+  }
 }

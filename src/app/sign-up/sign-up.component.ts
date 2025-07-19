@@ -5,41 +5,37 @@ import { AbstractControl, FormControl, FormGroup, ValidationErrors, Validators }
   selector: 'app-sign-up',
   standalone: false,
   templateUrl: './sign-up.component.html',
-  styleUrl: './sign-up.component.scss'
+  styleUrl: './sign-up.component.scss',
 })
 export class SignUpComponent {
   @Output() formSubmitted = new EventEmitter();
 
 formSignUp = new FormGroup({
     username: new FormControl('', [Validators.required]),
-    email: new FormControl('', [Validators.required, Validators.email], []),
-    password: new FormControl('', [Validators.required, Validators.minLength(6)]),
+    password: new FormControl('', [Validators.required, Validators.minLength(8)]),
     confirmPassword: new FormControl('', []),
   }, [this.isMismatch]);
 
   
   private isMismatch(control: AbstractControl): ValidationErrors | null {
-    // si no coinciden, devuelvo el objeto ValidationErrors
     if (control.get('password')?.value !== control.get('confirmPassword')?.value) {
       return  { passwordMismatch: true };
     }
-
     return null
   };
 
   setDefaultValues() {
     this.formSignUp.setValue({
-      username: 'Demo',
-      email: 'demo@email.com',
-      password: '123456',
-      confirmPassword: '123456'
+      username: 'AlbaBarragan',
+      password: '12345678',
+      confirmPassword: '12345678'
     });
   }
 
   onSubmit() {
     if (this.formSignUp.valid) {
-      console.log(this.formSignUp.value);
       this.formSubmitted.emit(this.formSignUp.value);
+      alert('Te logueaste correctamente');
     }
   }
 }
