@@ -11,6 +11,7 @@ import { DisqueriaMusicComponent } from './disqueria-music/disqueria-music.compo
 import { InputIntegerComponent } from './input-integer/input-integer.component';
 import { MusicListComponent } from './music-list/music-list.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { AgregarDiscoComponent } from './agregar-disco/agregar-disco.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     DisqueriaAboutComponent,
     DisqueriaMusicComponent,
     InputIntegerComponent,
-    SignUpComponent
+    SignUpComponent,
+    AgregarDiscoComponent
   ],
   imports: [
     BrowserModule,

@@ -19,4 +19,11 @@ export class MusicDataService {
     .pipe(tap((music : Musica[]) => music.forEach(music => music.cantidad = 0))); // Inicializa la cantidad a 0 para cada música
     //consumir la apirest
   }
+
+    public addMusica(artista: string, disco: string, anio: number, precio: number, stock: number, portada: string, novedad: boolean): Observable<Musica> {
+      const nuevoDisco: Omit<Musica, 'id'> = {
+        artista, disco, anio, precio, stock, portada, novedad, cantidad: 0
+      };
+      return this.http.post<Musica>(URL, nuevoDisco);
+    }
 }

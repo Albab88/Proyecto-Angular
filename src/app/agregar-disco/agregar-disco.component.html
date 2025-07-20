@@ -1,0 +1,38 @@
+        <h2>Agregar Producto</h2>
+    <form [formGroup]="formularioAgregar" (submit)="OnSubmit()" class="formulario">
+  
+    <div class="control">
+        <label for="artista" class="form-label">Artista</label>
+        <input type="text" class="form-control" id="artista" formControlName="artista">
+    </div>
+    
+    <div class="control">
+        <label for="disco" class="col-form-label">Disco</label>
+        <input type="text" class="form-control" id="disco" formControlName="disco">
+    </div>
+
+    <div class="control">
+        <label for="anio" class="form-label">Año de publicacón</label>
+        <input type="number" class="form-control" id="anio" formControlName="anio">
+    </div>
+
+    <div class="control">
+        <label for="precio" class="form-label">Precio</label>
+        <input type="number" class="form-control" id="precio" formControlName="precio">
+    </div>
+    
+    <div class="control">
+        <label for="stock" class="form-label">Stock</label>
+        <input type="number" class="form-control" id="stock" formControlName="stock">
+    </div>
+
+    
+    <div class="control">
+        <label for="portada" class="form-label">Portada</label>
+        <input type="text" class="form-control" id="portada" formControlName="portada">
+    </div>
+    
+    <div class="container-fluid">
+        <button [disabled]="formularioAgregar.invalid" type="submit" class="btn-nuevoDisco">Agregar Disco</button>
+    </div>
+</form>
