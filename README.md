@@ -1,6 +1,6 @@
 # Disqueria Coplas Eternas
 
-Este proyecto corresponde al trabajo del seminario de Angular correspondiente al año 2025
+Este proyecto corresponde al trabajo del seminario de Angular del año 2025
 
 ## Datos de estudiante
 
