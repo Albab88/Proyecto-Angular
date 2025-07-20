@@ -6,7 +6,7 @@ Este proyecto corresponde al trabajo del seminario de Angular del año 2025
 
 *   **Apellido y nombre:** Barragán, María del Alba
 *   **DNI:** 33917854
-*   **e-mail:** albabarragan88@gmail.com
+*   **E-mail:** albabarragan88@gmail.com
 *   **Sede:** Rauch
 
 
@@ -28,7 +28,7 @@ Input-integer: Maneja la manipulación de la entrada del usuario en las cantidad
 Music-list: Se encarga de todo lo relacionado con la ógica de la lista de discos disponibles
 Sign-up: permite al usuario iniciar sesión
 
-## Conceptos
+## Conceptos vistos y trabajados en el proyecto
 
 - Ruteo
 - Directivas
