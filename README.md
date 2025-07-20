@@ -45,7 +45,7 @@ Por otro lado, existen otras páginas dentro de la misma aplicación:
 - Componentes
 - Templates
 - DataBinding
-- Directivas
+- Interfaces
 - Pipes
 - HTTPClient
 - Consumo de datos mediante Mockapi
