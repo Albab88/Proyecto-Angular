@@ -1,59 +1,40 @@
-# Disqueria
+# Disqueria Coplas Eternas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+Este proyecto corresponde al trabajo del seminario de Angular correspondiente al año 2025
 
-## Development server
+## Datos de estudiante
 
-To start a local development server, run:
+*   **Apellido y nombre:** Barragán, María del Alba
+*   **DNI:** 33917854
+*   **e-mail:** albabarragan88@gmail.com
+*   **Sede:** Rauch
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Descripción del proyecto
 
-## Code scaffolding
+Esta aplicación web permite tener una simulación completa de la compra de los discos que posee la disquería, contando con su artista, nombre del disco, stock, cantidad y precio. Dentro de la cantidad, se observa botones que permiten determinar la cantidad a comprar, como así también un botón para agregar al carrito la cantidad deseada.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Dentro de la misma página, exite también un carrito de compras donde se agregan los discos elegidos y, de manera dinámica, se observa el cambio de cantidad y precio final a pagar.
+En este mismo carrito, podemos eliminar de a un disco por vez mediante un botón. Y finalmente, cuando la compra está decidida; un botón de compra nos dará el mensaje simulando dicha compra y vaciando el carrito para poder continuar. 
 
-```bash
-ng generate component component-name
-```
+Por otro lado, existen otras páginas dentro de la misma aplicación: una de información, donde aparecen datos de interés para el cliente cuando desee contactar a la disquería por diferentes motivos y una de Inicio de Sesión.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Componentes del sitio
 
-```bash
-ng generate --help
-```
+Carrito: Encargado de la lógica de la compra
+Disqueria-about: Contiene la información de contacto
+Disquería-music Contiene los componentes de music-list y carrito-list
+Input-integer: Maneja la manipulación de la entrada del usuario en las cantidades de la lista de discos
+Music-list: Se encarga de todo lo relacionado con la ógica de la lista de discos disponibles
+Sign-up: permite al usuario iniciar sesión
 
-## Building
+## Conceptos
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Ruteo
+- Directivas
+- Componentes
+- Templates
+- DataBinding
+- Directivas
+- Pipes
+- HTTPClient
